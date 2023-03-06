@@ -5,17 +5,16 @@
 			  android:background="#EEEEEE"
 			  android:orientation="vertical"
 			  android:padding="5dp">
-	<!--最大计算器界面用一个滚动视图，以防超出大小-->
+	<!--滚动视图-->
 	<ScrollView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content">
-		<!--    然后从上到下是一个线性布局，先文本，后按钮-->
+		<!--线性布局-->
 		<LinearLayout
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:orientation="vertical">
-			<!--        先文本——标题：居中，字体20sp，文本框默认大小。
-						标题名字这里用@string的方式配置，之前讲过，下面同理1234... 颜色都是用这种方式-->
+			<!--文本-->
 			<TextView
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -23,8 +22,7 @@
 					android:text="@string/simple_calculator"
 					android:textColor="@color/black"
 					android:textSize="20sp"/>
-			<!--        文本框——计算文本：设置id，为之后的计算逻辑服务
-						向右下角对齐，初始为0，总行数为3，颜色大小，文本框大小-->
+			<!--文本框-->
 			<TextView
 					android:id="@+id/tv_result"
 					android:layout_width="match_parent"
@@ -36,16 +34,12 @@
 					android:textColor="@color/black"
 					android:textSize="25sp"/>
 
-			<!--        按钮是一个网格布局，4行5列，默认按钮大小-->
+			<!--按钮是一个网格布局，4行5列，默认按钮大小-->
 			<GridLayout
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:columnCount="4"
 					android:rowCount="5">
-
-				<!--            按钮：一行有4个按钮，所以用比例来排列，设置android:layout_width="0dp,android:layout_columnWeight="1"
-								按钮名也配置再@strin，按钮大小和文字大小都配置在@dimen，然后文字居中
-								其他按钮也一样，唯一不同的是开根号这个按钮，是用图片放在按钮上，也就是用imageButton-->
 
 				<Button
 						android:id="@+id/btn_cancel"
@@ -231,14 +225,6 @@
 						android:text="@string/equal"
 						android:textColor="@color/black"
 						android:textSize="@dimen/button_font_size"/>
-
-				<!--<ImageButton-->
-				<!--		android:id="@+id/ib_sqrt"-->
-				<!--		android:layout_width="0dp"-->
-				<!--		android:layout_height="@dimen/button_height"-->
-				<!--		android:layout_columnWeight="1"-->
-				<!--		android:scaleType="centerInside"-->
-				<!--		android:src="@drawable/sqrt" />-->
 
 			</GridLayout>
 		</LinearLayout>
