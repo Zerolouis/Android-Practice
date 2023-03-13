@@ -3,6 +3,7 @@ package com.zerolouis.practice01;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -126,6 +127,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 			case "×":
 				return Double.parseDouble(firstNum) * Double.parseDouble(secondNum);
 			default:
+				if (secondNum.equals("0")){
+					String warning = "被除数不能为0！";
+					Toast toast = Toast.makeText(this,warning,Toast.LENGTH_SHORT);
+					toast.show();
+				}
 				return Double.parseDouble(firstNum) / Double.parseDouble(secondNum);
 		}
 	}

@@ -1,0 +1,12 @@
+<resources>
+	<string name="app_name">Implicit Intents</string>
+	<string name="edittext_uri">http://www.biying.com</string>
+	<string name="button_uri">打开网站</string>
+
+	<string name="edittext_loc">南通大学</string>
+	<string name="button_loc">打开位置</string>
+
+	<string name="edittext_share">\'Twas brillig and the slithy toves</string>
+	<string name="button_share">分享文本</string>
+	<string name="share_text_with">通过以下方式分享:</string>
+</resources>
