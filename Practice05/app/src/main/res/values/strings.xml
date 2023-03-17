@@ -1,0 +1,17 @@
+<resources>
+	<string name="app_name">Practice05</string>
+	<string name="username">用户名</string>
+	<string name="passwordText">密码:</string>
+	<string name="passwordEdit">输入密码</string>
+	<string name="ageText">年龄:</string>
+	<string name="ageEdit">输入年龄</string>
+	<string name="phoneText">电话号码</string>
+	<string name="phoneEdit">输入电话号码</string>
+	<string name="userinfoTitle">用户信息</string>
+	<string name="registerText">注册</string>
+	<string name="loginText">登录</string>
+	<string name="usernameText">用户名:</string>
+	<string name="usernameEdit">输入用户名</string>
+	<string name="confirmText">确认密码</string>
+	<string name="confirmEdit">再次输入密码</string>
+</resources>
