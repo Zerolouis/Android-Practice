@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+			  android:layout_height="80dp"
+			  android:minHeight="90dp"
+			  android:orientation="horizontal" android:background="#FFFFFF">
+
+	<ImageView
+			android:layout_width="100dp"
+			android:layout_height="match_parent" android:id="@+id/store_icon"
+			android:layout_weight="1"
+			android:layout_marginRight="10dp"/>
+	<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" android:layout_weight="5">
+
+		<TextView
+				android:text="标题"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/store_name" android:textSize="25sp"
+				android:layout_gravity="top" android:layout_marginTop="5dp"
+				android:paddingLeft="5dp" android:textColor="@color/black"/>
+		<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_gravity="bottom">
+			<TextView
+					android:text="新品"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent" android:id="@+id/store_new" android:layout_weight="1"
+					android:gravity="center" android:textColor="#D32F2F"/>
+			<TextView
+					android:text="限额10名"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent" android:id="@+id/store_number" android:layout_weight="2"
+					android:gravity="center|right" android:paddingRight="20dp" android:textColor="#D32F2F"/>
+		</LinearLayout>
+	</LinearLayout>
+
+	<Button
+			android:layout_marginHorizontal="10dp"
+			android:text="申请"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/apply_btn" android:layout_weight="1"
+			android:gravity="center" android:layout_gravity="center" android:textSize="14sp" android:padding="0dp"/>
+</LinearLayout>

@@ -13,23 +13,67 @@
 			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintBottom_toBottomOf="parent">
 		<TextView
-				android:text="用户信息"
+				android:text="@string/userinfoTitle"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content" android:id="@+id/userInfoTitle" android:layout_marginTop="20dp"
 				android:layout_marginHorizontal="20dp"
 				android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
 		<TextView
-				android:text="TextView"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content" android:id="@+id/userInfoText"
 				android:layout_marginHorizontal="20dp" android:layout_marginTop="20dp"
-				android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_weight="1"/>
+				android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_weight="2"/>
+		<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+					  android:layout_weight="2" android:layout_margin="20dp" android:orientation="vertical">
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+						  android:layout_weight="2" android:orientation="horizontal">
+				<TextView
+						android:text="@string/passwordText"
+						android:layout_width="20dp"
+						android:layout_height="20dp" android:id="@+id/passwordTextView" android:layout_weight="1"
+						android:textSize="15sp"/>
+				<EditText
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:inputType="textPassword"
+						android:text=""
+						android:hint="@string/passwordEdit"
+						android:ems="10"
+						android:id="@+id/passwordEditText" android:layout_weight="2"
+						android:minHeight="48dp"/>
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+						  android:layout_weight="2" android:orientation="horizontal">
+				<TextView
+						android:text="@string/confirmText"
+						android:layout_width="20dp"
+						android:layout_height="20dp" android:id="@+id/confirmTextView" android:layout_weight="1"
+						android:textSize="15sp"/>
+				<EditText
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:inputType="textPassword"
+						android:text=""
+						android:hint="@string/confirmEdit"
+						android:ems="10"
+						android:id="@+id/confirmEditText" android:layout_weight="2"
+						android:minHeight="48dp"/>
+			</LinearLayout>
+
+		</LinearLayout>
+		<Button
+				android:text="修改"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginHorizontal="20dp" android:id="@+id/changeBtn"
+				android:onClick="onChange"
+		/>
 		<Button
 				android:text="注销"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_marginHorizontal="20dp" android:id="@+id/logoutBtn"
 				android:onClick="onLogout"
-				android:layout_marginVertical="20dp"/>
+				android:layout_marginVertical="10dp"/>
 	</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
