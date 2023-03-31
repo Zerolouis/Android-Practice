@@ -60,6 +60,13 @@ public class StoreAdapter extends BaseAdapter implements AdapterView.OnItemClick
 		holder.store_number.setText(String.format(Locale.CHINA,"限额%d名",store.getNumber()));
 		holder.store_icon.setImageResource(store.getImage());
 		holder.store_icon.requestFocus();
+		String message = "您申请了"+store.getName();
+		holder.apply_btn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(mContext, message, Toast.LENGTH_SHORT).show();
+			}
+		});
 		return convertView;
 	}
 
